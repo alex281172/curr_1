@@ -2,6 +2,10 @@ import requests
 import json
 from flask import Flask
 
+
+#контроль
+
+
 text = requests.get('https://www.cbr-xml-daily.ru/daily_json.js').text
 
 currensies = json.loads(text)
